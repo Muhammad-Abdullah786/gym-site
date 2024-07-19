@@ -1,15 +1,16 @@
 // this will be the userCOntextProvider where we need to provide which componett need any certain props
 
 import React, { useState } from "react";
-import userContext from "./userContext";
+import UserContext from "./UserContext.js";
 
-const userContextProvider = ({ childern }) => {
-  const [user, setUser] = useState({});
+const UserContextProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
   return (
-    <userContext.Provider value={{ user, setUser }}>// always pass info in it as object
-      {childern}
-    </userContext.Provider>
+    <UserContext.Provider value={{ user, setUser }}>
+      {/* // always pass info in it as object */}
+      {children}
+    </UserContext.Provider>
   );
 };
 
-export default userContextProvider;
+export default UserContextProvider;
