@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useContext } from "react";
-import UserContext from "../context/UserContext";
+import UserContext from "../context/userContext";
 function Login() {
   const [username, setusername] = useState("");
   const [password, setPassword] = useState("");

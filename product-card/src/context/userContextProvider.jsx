@@ -1,7 +1,7 @@
 // this will be the userCOntextProvider where we need to provide which componett need any certain props
 
 import React, { useState } from "react";
-import UserContext from "./UserContext.js";
+import UserContext from "./userContext";
 
 const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
